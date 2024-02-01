@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      .container{
+        width: 380px;
+        height: 480px;
+        display: grid;
+        grid-template-columns: 50px 100px 100px 100px;
+        grid-template-rows: 200px 100px 100px 50px;
+        gap: 10px;
+        background-color: #000;
+        box-shadow: 2px 5px 18px black;
+      }
+      
+      .yellow{
+        background-color: yellow;
+        grid-row: span 2;
+      }
+      .blue{
+        background-color: #190af2;
+      }
+      .red{
+        background-color: #cb2020;
+        grid-column: span 2;
+      }
+      .white{
+        background-color: #FFEF00;
+      }
+      .white1{
+        grid-column: span 2;
+        background-color: #66FF00;
+      }
+      .white2{
+        grid-column: span 2;
+        background-color: #FF00FF;
+      }
+      .white3{
+        grid-column: span 2;
+        background-color: #C0C0C0;
+      }
+      .white4{
+        grid-row: span 2;
+        background-color: #C0C0C0;
+      }
+      .white5{
+        grid-row: span 2;
+        background-color: #E3FF00;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item red"></div>
+        <div class="item white1 white"></div>
+
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+
+        <div class="item yellow"></div>
+        <div class="item white4 white"></div>
+        <div class="item blue"></div>
+        <div class="item white5 white"></div>
+
+        <div class="item white"></div>
+    </div>
+</body>
+</html>
